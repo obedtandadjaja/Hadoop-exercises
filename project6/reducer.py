@@ -3,12 +3,9 @@
 import sys
 
 count = 0
-totalValue = 0
 
 for line in sys.stdin:
   data = line.strip()
+  count += 1 if "10.99.99.186" in data else 0
 
-  totalValue += float(value)
-  count += 1
-
-print totalValue, "\t", count
+print count
