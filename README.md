@@ -23,9 +23,9 @@ Please ensure that you configure the VM to at least 1.5 GB of RAM in [VMware Pla
 These input compressed archives can also be downloaded from Udacity servers. Please check [here](http://content.udacity-data.com/courses/ud617/purchases.txt.gz) for input file for Problem Statement 1 and [here](http://content.udacity-data.com/courses/ud617/access_log.gz) for Problem Statement 2.<br>
 These links are also mentioned in the instructions document provided by Udacity Course Instructors.
 
-## [Problem Statement1](ProblemStatement1)
+## [Case 1](Case1)
 
-### Question#1
+### Project#1
 Instead of breaking the sales down by store, instead give us a sales breakdown by product category across all of our stores.
 
 1. What is the value of total sales for the following categories?
@@ -33,14 +33,9 @@ Instead of breaking the sales down by store, instead give us a sales breakdown b
 	- Consumer Electronics
 
 #### Code
-##### Java variant
-[`P1Q1.java`](ProblemStatement1/Java/org/p7h/udacityhadoop/p1/P1Q1.java)
 
 ##### Python variant
-[`P1Q1_Mapper.py`](ProblemStatement1/Python/P1Q1_Mapper.py) and [`P1Q1_Reducer.py`](ProblemStatement1/Python/P1Q1_Reducer.py)
-
-#### Solution
-Please check [`pur_p1q1.tsv`](ProblemStatement1/1_Output/pur_p1q1.tsv) for the output of this problem statement.
+[`mapper.py`](case1/project1/mapper.py) and [`reducer.py`](case1/project1/reducer.py)
 
 #### Execution Log files
 Please check [`pur_p1q1.txt`](ProblemStatement1/2_ExecLogs/Java/pur_p1q1.txt) and [`pur_p1q1.txt`](ProblemStatement1/2_ExecLogs/Python/pur_p1q1.txt) for command line execution log files of Java and Python respectively.
