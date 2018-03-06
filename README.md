@@ -23,9 +23,15 @@ Please ensure that you configure the VM to at least 1.5 GB of RAM in [VMware Pla
 These input compressed archives can also be downloaded from Udacity servers. Please check [here](http://content.udacity-data.com/courses/ud617/purchases.txt.gz) for input file for Problem Statement 1 and [here](http://content.udacity-data.com/courses/ud617/access_log.gz) for Problem Statement 2.<br>
 These links are also mentioned in the instructions document provided by Udacity Course Instructors.
 
-## [Case 1](Case1)
+## [Case 1](case1)
 
 ### Project#1
+Break down all the sales by store.
+
+#### Code
+[`mapper.py`](case1/project1/mapper.py) and [`reducer.py`](case1/project1/reducer.py)
+
+### Project#2
 Instead of breaking the sales down by store, instead give us a sales breakdown by product category across all of our stores.
 
 1. What is the value of total sales for the following categories?
@@ -33,14 +39,9 @@ Instead of breaking the sales down by store, instead give us a sales breakdown b
 	- Consumer Electronics
 
 #### Code
-
-##### Python variant
 [`mapper.py`](case1/project1/mapper.py) and [`reducer.py`](case1/project1/reducer.py)
 
-#### Execution Log files
-Please check [`pur_p1q1.txt`](ProblemStatement1/2_ExecLogs/Java/pur_p1q1.txt) and [`pur_p1q1.txt`](ProblemStatement1/2_ExecLogs/Python/pur_p1q1.txt) for command line execution log files of Java and Python respectively.
-
-### Question#2
+### Project#3
 Find the monetary value for the highest individual sale for each separate store.
 
 1. What are the values for the following stores?
@@ -49,19 +50,9 @@ Find the monetary value for the highest individual sale for each separate store.
 	- Chandler
 
 #### Code
-##### Java variant
-[`P1Q2.java`](ProblemStatement1/Java/org/p7h/udacityhadoop/p1/P1Q2.java)
+[`mapper.py`](case1/project2/mapper.py) and [`reducer.py`](case1/project2/reducer.py)
 
-##### Python variant
-[`P1Q2_Mapper.py`](ProblemStatement1/Python/P1Q2_Mapper.py) and [`P1Q2_Reducer.py`](ProblemStatement1/Python/P1Q2_Reducer.py)
-
-#### Solution
-Please check [`pur_p1q2.tsv`](ProblemStatement1/1_Output/pur_p1q2.tsv) for the output of this problem statement.
-
-#### Execution Log files
-Please check [`pur_p1q2.txt`](ProblemStatement1/2_ExecLogs/Java/pur_p1q2.txt) and [`pur_p1q2.txt`](ProblemStatement1/2_ExecLogs/Python/pur_p1q2.txt) for command line execution log files of Java and Python respectively.
-
-### Question#3
+### Project#4
 Find the total sales value across all the stores, and the total number of sales. Assume there is only one reducer.
 
 1. Find
@@ -69,60 +60,29 @@ Find the total sales value across all the stores, and the total number of sales.
 	- Total number of sales
 
 #### Code
-##### Java variant
-[`P1Q3.java`](ProblemStatement1/Java/org/p7h/udacityhadoop/p1/P1Q3.java)
+[`mapper.py`](case1/project3/mapper.py) and [`reducer.py`](case1/project3/reducer.py)
 
-##### Python variant
-[`P1Q3_Mapper.py`](ProblemStatement1/Python/P1Q3_Mapper.py) and [`P1Q3_Reducer.py`](ProblemStatement1/Python/P1Q3_Reducer.py)
+## [Case 2](case2):
 
-#### Solution
-Please check [`pur_p1q3.tsv`](ProblemStatement1/1_Output/pur_p1q3.tsv) for the output of this problem statement.
-
-#### Execution Log files
-Please check [`pur_p1q3.txt`](ProblemStatement1/2_ExecLogs/Java/pur_p1q3.txt) and [`pur_p1q3.txt`](ProblemStatement1/2_ExecLogs/Python/pur_p1q3.txt) for command line execution log files of Java and Python respectively.
-
-## [Problem Statement2](ProblemStatement2):
-Execution steps are also documented for running the following in either [Python](ProblemStatement2/Python/0_P2_Exec_Steps_Py.sh) or [Java](ProblemStatement2/Java/0_P2_Exec_Steps_Java.sh).
-
-### Question#1
+### Project#5
 Write a MapReduce program which will display the number of hits for each different file on the Web site.
 
 1. Find
 	- How many hits were made to the page: /assets/js/the-associates.js?
 
 #### Code
-##### Java variant
-[`P2Q1.java`](ProblemStatement2/Java/org/p7h/udacityhadoop/p2/P2Q1.java)
+[`mapper.py`](case2/project5/mapper.py) and [`reducer.py`](case2/project5/reducer.py)
 
-##### Python variant
-[`P2Q1_Mapper.py`](ProblemStatement2/Python/P2Q1_Mapper.py) and [`P2Q1_Reducer.py`](ProblemStatement2/Python/P2Q1_Reducer.py)
-
-#### Solution
-Please check [`acc_p2q1.tsv`](ProblemStatement2/1_Output/acc_p2q1.tsv) for the output of this problem statement.
-
-#### Execution Log files
-Please check [`acc_p2q1.txt`](ProblemStatement2/2_ExecLogs/Java/acc_p2q1.txt) and [`acc_p2q1.txt`](ProblemStatement2/2_ExecLogs/Python/acc_p2q1.txt) for command line execution log files of Java and Python respectively.
-
-### Question#2
+### Project#6
 Write a MapReduce program which determines the number of hits to the site made by each different IP Address.
 	
 1. Find
 	- How many hits were made by the IP address: 10.99.99.186?
 
 #### Code
-##### Java variant
-[`P2Q2.java`](ProblemStatement2/Java/org/p7h/udacityhadoop/p2/P2Q2.java)
+[`mapper.py`](case2/project6/mapper.py) and [`reducer.py`](case2/project6/reducer.py)
 
-##### Python variant
-[`P2Q2_Mapper.py`](ProblemStatement2/Python/P2Q2_Mapper.py) and [`P2Q2_Reducer.py`](ProblemStatement2/Python/P2Q2_Reducer.py)
-
-#### Solution
-Please check [`acc_p2q2.tsv`](ProblemStatement2/1_Output/acc_p2q2.tsv) for the output of this problem statement.
-
-#### Execution Log files
-Please check [`acc_p2q2.txt`](ProblemStatement2/2_ExecLogs/Java/acc_p2q2.txt) and [`acc_p2q2.txt`](ProblemStatement2/2_ExecLogs/Python/acc_p2q2.txt) for command line execution log files of Java and Python respectively.
-
-### Question#3
+### Project#7
 Find the most popular file on the Web site. In other words, the file which had the most hits. Your Reducer should just write out the name of the file and number of hits into HDFS.
 
 1. Find
@@ -130,14 +90,4 @@ Find the most popular file on the Web site. In other words, the file which had t
 	- Number of hits to that file?
 
 #### Code
-##### Java variant
-[`P2Q3.java`](ProblemStatement2/Java/org/p7h/udacityhadoop/p2/P2Q3.java)
-
-##### Python variant
-[`P2Q3_Mapper.py`](ProblemStatement2/Python/P2Q3_Mapper.py) and [`P2Q3_Reducer.py`](ProblemStatement2/Python/P2Q3_Reducer.py)
-
-#### Solution
-Please check [`acc_p2q3.tsv`](ProblemStatement2/1_Output/acc_p2q3.tsv) for the output of this problem statement.
-
-#### Execution Log files
-Please check [`acc_p2q3.txt`](ProblemStatement2/2_ExecLogs/Java/acc_p2q3.txt) and [`acc_p2q3.txt`]
+[`mapper.py`](case2/project7/mapper.py) and [`reducer.py`](case2/project7/reducer.py)
