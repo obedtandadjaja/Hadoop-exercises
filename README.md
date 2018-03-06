@@ -20,7 +20,7 @@ Please ensure that you configure the VM to at least 1.5 GB of RAM in [VMware Pla
 ## Data
 ### Input Files
 
-These input compressed archives can also be downloaded from Udacity servers. Please check [here](http://content.udacity-data.com/courses/ud617/purchases.txt.gz) for input file for Problem Statement 1 and [here](http://content.udacity-data.com/courses/ud617/access_log.gz) for Problem Statement 2.<br>
+These input compressed archives can also be downloaded from Udacity servers. Please check [here](http://content.udacity-data.com/courses/ud617/purchases.txt.gz) for input file for Case 1 and [here](http://content.udacity-data.com/courses/ud617/access_log.gz) for Case 2.<br>
 These links are also mentioned in the instructions document provided by Udacity Course Instructors.
 
 ## [Case 1](case1)
